@@ -1,0 +1,13 @@
+.leftDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.rightDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.black {
+  color: black;
+}

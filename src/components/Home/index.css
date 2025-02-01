@@ -1,0 +1,27 @@
+.ipl {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+p {
+  color: white;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  height: 50px;
+}
+.flexRowHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}

@@ -1,0 +1,13 @@
+.matchcard {
+  margin: 10px;
+  border: solid 2px white;
+  max-width: 35vw;
+  border-radius: 10px;
+}
+.matchCardDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: navy;
+  padding: 5px;
+}
