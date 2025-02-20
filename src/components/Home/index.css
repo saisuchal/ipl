@@ -1,4 +1,8 @@
 .ipl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
   background-size: cover;
   color: white;
@@ -8,13 +12,15 @@
 p {
   color: white;
 }
-ul {
+.teams-list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 90vw;
+  padding: 0px;
 }
 .logo {
   height: 50px;
@@ -23,5 +29,10 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .teams-list {
+    justify-content: space-around;
+  }
 }

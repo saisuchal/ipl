@@ -6,6 +6,10 @@ import './index.css'
 class Home extends Component {
   state = {teams: '', isLoading: true}
 
+  componentDidMount() {
+    this.fetchdata()
+  }
+
   dashboard = teams => (
     <div className="ipl">
       <div className="flexRowHome">
@@ -16,7 +20,7 @@ class Home extends Component {
         />
         <h1>IPL Dashboard</h1>
       </div>
-      <ul>
+      <ul className="teams-list">
         {teams.map(team => (
           <TeamCard team={team} key={team.id} />
         ))}
@@ -35,19 +39,18 @@ class Home extends Component {
     const {teams} = await response.json()
     const teamList = teams.map(team => this.toCamelCase(team))
     console.log(teamList)
-    this.setState({teams: teamList, isLoading: false})
-  }
-
-  componentDidMount = () => {
-    this.fetchdata()
+    this.setState({
+      teams: teamList,
+      isLoading: false,
+    })
   }
 
   render() {
     const {isLoading, teams} = this.state
-    console.log(isLoading, teams)
     const loader = (
+      // testid for testcases
       <div data-testid="loader" className="ipl">
-        <Loader type="Oval" color="#ffffff" height={50} width={50} />
+        <Loader type="Oval" color="white" height={50} width={50} />
       </div>
     )
 

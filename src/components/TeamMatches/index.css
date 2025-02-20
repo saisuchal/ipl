@@ -7,18 +7,62 @@
   min-width: 75vw;
   padding: 10px;
 }
-.teambg {
+.team-bg {
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: grey;
+  background-size: cover;
+  min-height: 100vh;
 }
-ul {
+.team-matches {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  padding: 0px;
+}
+
+.team-poster {
+  width: 80vw;
+}
+
+.team-poster-div {
+  width: 80vw;
+  border-radius: 20px;
+}
+
+.back-button {
+  background-color: rgb(30, 149, 235);
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: 18px;
+}
+.pie-chart {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  background-color: rgb(242, 236, 236, 0.75);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 30vh;
+  width: 50vw;
+}
+
+.loader-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  min-height: 100vh;
 }

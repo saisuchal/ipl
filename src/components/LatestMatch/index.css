@@ -1,13 +1,61 @@
-.leftDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.rightDetails {
+.left-details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  text-align: start;
+  min-width: 25vw;
+  line-height: 1.2;
 }
-.black {
-  color: black;
+.right-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  justify-content: center;
+  min-width: 25vw;
+  line-height: 1.2;
+}
+
+.latest-match {
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  width: 80vw;
+  padding: 30px;
+  font-family: 'Bree Serif';
+  font-size: 16px;
+  border-radius: 15px;
+}
+.custom-para {
+  font-size: 22px;
+  font-style: oblique;
+}
+.team-logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 20vw;
+}
+.latest-match-team-logo {
+  max-width: 20vw;
+}
+
+@media screen and (max-width: 767px) {
+  .custom-para {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .custom-para {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .custom-para {
+    font-size: 24px;
+  }
 }
